@@ -53,7 +53,8 @@ function TrainerDashboard() {
               const appliedDate = roadmap.createdAt ? new Date(roadmap.createdAt).toLocaleDateString() : 'Unknown';
               
               return {
-                id: roadmap._id,
+                id: c._id,
+                roadmapId: roadmap._id,
                 initials,
                 name: c.name || 'Unknown Candidate',
                 applied: `Applied ${appliedDate}`,
